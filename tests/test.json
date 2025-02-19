@@ -1,0 +1,3 @@
+{"time":"2025-02-17T16:25:10.963100553-05:00","level":"INFO","msg":"TestBeaverInfo"}
+{"time":"2025-02-17T16:25:10.963206529-05:00","level":"WARN","msg":"TestBeaverWarn"}
+{"time":"2025-02-17T16:25:10.963241388-05:00","level":"ERROR","msg":"TestBeaverError"}
