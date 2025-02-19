@@ -1,8 +1,8 @@
-# Beaver - Logging Service
+# Logging Service
 
 ## Overview
 
-Beaver is a lightweight and efficient logging service written in Go. It provides structured logging capabilities, including middleware for HTTP routes, to enhance observability and debugging for your applications.
+This is a lightweight and efficient logging service written in Go. It provides structured logging capabilities, including middleware for HTTP routes, to enhance observability and debugging for your applications.
 
 ## Features
 
@@ -16,14 +16,14 @@ Beaver is a lightweight and efficient logging service written in Go. It provides
 
 ```sh
 # Clone the repository
-git clone https://github.com/yourusername/beaver.git
-cd beaver
+git clone https://github.com/yourusername/Log_Service_Go.git
+cd Log_Service_Go
 
 # Build the service
-go build -o beaver
+go build -o Log_Service_Go
 
 # Run the service
-./beaver
+./Log_Service_Go
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ go build -o beaver
 
 ```go
 import (
-    "github.com/yourusername/beaver"
+    "github.com/yourusername/Log_Service_Go"
     "net/http"
 )
 
@@ -54,7 +54,7 @@ func main() {
 package main
 
 import (
-    "github.com/yourusername/beaver"
+    "github.com/yourusername/Log_Service_Go"
     "log"
 )
 
@@ -69,7 +69,7 @@ func main() {
 
 ## Configuration
 
-Beaver can be configured using environment variables or a config file:
+The logger can be configured using environment variables or a config file:
 
 ### Using Environment Variables
 
@@ -83,7 +83,7 @@ export BEAVER_LOG_FILE=logs/app.log
 
 ### Using a Config File
 
-Beaver also supports configuration via a JSON or YAML file. Example JSON configuration:
+The logger also supports configuration via a JSON or YAML file. Example JSON configuration:
 
 ```json
 {
