@@ -178,3 +178,15 @@ func TestBeaverError(t *testing.T) {
 		t.Errorf("Incorrect log message: %v", logs[0].Msg)
 	}
 }
+
+// test logging middlware
+func TestLoggingMiddleware(t *testing.T) {
+	tbeaver, err := pkg.NewBeaver("file", "info", test_file)
+	if err != nil {
+		t.Errorf("Error creating beaver: %v", err)
+	}
+	if tbeaver == nil {
+		t.Errorf("Beaver not created")
+	}
+	//TODO
+}
