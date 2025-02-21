@@ -3,6 +3,7 @@ package pkg
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"log"
 	"log/slog"
 	"net/http"
@@ -164,7 +165,9 @@ func (b *Beaver) GetFilePath() string {
 	return b.filePath
 }
 
+// TODO FIX THIS, it doesnt log
 func LoggingMiddleware(beaver *Beaver, next http.Handler) http.Handler {
+	fmt.Println("LoggingMiddleware")
 	defer beaver.Close()
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		start := time.Now()
